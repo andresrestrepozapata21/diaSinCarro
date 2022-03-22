@@ -3,6 +3,10 @@
 	margin: 0;
 }
 
+.nav .navBar{
+  border-radius: 20%;
+}
+
 .container {
   background-color: #e3e3e3;
   padding: 50px;
