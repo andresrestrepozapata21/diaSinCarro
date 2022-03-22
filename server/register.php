@@ -9,7 +9,7 @@ $justification = $_POST['justification'];
 $estadoSoliciud = "pendiente";
 $fechaReg = date("d/m/y");
 
-$consult =  "INSERT INTO solicitudes(cedulaNumber, nombreCompleto, placa, tipoVehiculo, motivoSolicitud, estadoSolicitud, fechaReg) VALUES ('$cedulaNumber','$name','$licensePlate','$vehicule','$justification','$estadoSoliciud','$fechaReg')";
+$consult =  "INSERT INTO Solicitudes(cedulaNumber, nombreCompleto, placa, tipoVehiculo, motivoSolicitud, estadoSolicitud, fechaReg) VALUES ('$cedulaNumber','$name','$licensePlate','$vehicule','$justification','$estadoSoliciud','$fechaReg')";
 
 if($cedulaNumber === '' || $name === '' || $licensePlate === '' || $vehicule === 'Selecciona'|| $justification ===''){
     echo json_encode('error');
