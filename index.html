@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS and CSS module -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+    <title>Solicitud de movilidad</title>
+  </head>
+  <body>
+    <div class="container my-5">
+        <h1>¡Ingresa la información solicitada!</h1>
+        <div class="paragraph">
+          <p>Antes de enviar el formulario, asegurese de ingresar la información correcta, una vez enviado el formulario no hay manera de modificarlo, ¡lea y responda con cuidado!</p>
+        </div>
+        <form id="form">
+            <input type="text" name="cedulaNumber" placeholder="Ingresar número de cédula" class="form-control my-3">
+            <input type="text" name="name" placeholder="Ingresar nombre completo" class="form-control my-3">
+            <input type="text" name="licensePlate" placeholder="Ingresar placa del vehiculo" class="form-control my-3">
+            
+            <div class="divBox">
+                <label class="labelBox">Elija su tipo de automovil:</label>
+                <select name="vehicule" id="vehicule" class="select-css">
+                    <option value="Selecciona">Selecciona el vehiculo</option>
+                    <option value="Moto">moto</option>
+                    <option value="Carro">Carro</option>
+                </select>
+            </div>
+
+            <div class="divTextArea">
+                <label class="labelTextArea">Ingrese el motivo por el cual solicita autorización de movilidad:</label>
+                <textarea name="justification" id="textArea" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="divBtn">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
+        <div class="mt-3" id="answer">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./src/app.js"></script>
+  </body>
+</html>
