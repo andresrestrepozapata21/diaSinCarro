@@ -25,6 +25,7 @@ form.addEventListener("submit", (e) => {
               ${data}
           </div>
         `;
+        form.reset();
       }
     });
 });
