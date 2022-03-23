@@ -7,7 +7,7 @@ $modificar = $conex->query($m);
 $dato = $modificar->fetch_array();
 
 if(isset($_POST['modificar'])){
-    $id1 = $_POST['id'];
+    $id = $_POST['id'];
     $cedula = $conex->real_escape_string($_POST['mcedulaNumber']);
     $nombre = $conex->real_escape_string($_POST['mnombre']);
     $placa = $conex->real_escape_string($_POST['mplaca']);
@@ -16,10 +16,12 @@ if(isset($_POST['modificar'])){
     $estado = $conex->real_escape_string($_POST['mestado']);
     $fecha = $conex->real_escape_string($_POST['mfecha']);
     
-    $actualiza = "UPDATE Solicitudes SET cedulaNumber = '$cedula', nombrecompleto = '$nombre', placa = '$placa', tipoVehiculo = '$tipo', motivoSolicitud = '$motivo', estadoSolicitud = '$estado', fechaReg = '$fecha', WHERE id_solicitud = '$id1'";
-    $actualizar = $conex->query[$actualiza];
+    
+    $actualiza = "UPDATE Solicitudes SET cedulaNumber = '$cedula', nombreCompleto = '$nombre', placa = '$placa', tipoVehiculo = '$tipo', motivoSolicitud = '$motivo', estadoSolicitud = '$estado', fechaReg = '$fecha' WHERE id_solicitud = '$id'";
+    $actualizar = $conex->query($actualiza);
     header("location:tableRequest.php");
 }
+ ?>
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +55,7 @@ if(isset($_POST['modificar'])){
                 <input type="text" name="mcedulaNumber" class="form-control" value="<?php echo $dato['cedulaNumber'];?>" placehoder="cedula" required>
             </div>
             <div class="row">
-                <input type="text" name="mnombre" class="form-control" value="<?php echo $dato['nombrecompleto'];?>" placehoder="nombre" required>
+                <input type="text" name="mnombre" class="form-control" value="<?php echo $dato['nombreCompleto'];?>" placehoder="nombre" required>
             </div>
             <div class="row">
                 <input type="text" name="mplaca" class="form-control" value="<?php echo $dato['placa'];?>" placehoder="placa" required>

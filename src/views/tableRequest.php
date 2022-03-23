@@ -1,7 +1,7 @@
 <?php
   include('../../server/conection_db/db_conection.php');
   //consult all
-  $consult = "SELECT * from Solicitudes";
+  $consult = "SELECT * FROM Solicitudes";
   $safe = $conex->query($consult);
 ?>
 <!DOCTYPE html>
@@ -46,7 +46,7 @@
                 <?php while($row = $safe->fetch_assoc()) { ?>
                 <tr method="post">
                   <td><?php echo $row['cedulaNumber']; ?></td>
-                  <td><?php echo $row['nombrecompleto']; ?></td>
+                  <td><?php echo $row['nombreCompleto']; ?></td>
                   <td><?php echo $row['placa']; ?></td>
                   <td><?php echo $row['tipoVehiculo']; ?></td>
                   <td><?php echo $row['motivoSolicitud']; ?></td>
