@@ -23,7 +23,7 @@
     <title>Tabla Solicitudes</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-ligth p-3 justify-content-between">
+    <nav class="navbar navbar-ligth bg-ligth p-3 justify-content-between">
         <img src="../images/logo_encabezado.png" width="300" height="70" alt="">
         <button class="btn btn-primary" onclick="location.href = '../../index.html'" type="submit">Ir al formulario</button>
     </nav>

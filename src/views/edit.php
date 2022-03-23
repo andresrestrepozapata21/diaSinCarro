@@ -44,7 +44,7 @@ if(isset($_POST['edit'])){
     <title>Tabla Solicitudes</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-ligth p-3 justify-content-between">
+    <nav class="navbar navbar-ligth bg-ligth p-3 justify-content-between">
        <img src="../images/logo_encabezado.png" width="300" height="70" alt="">
     </nav>
     
