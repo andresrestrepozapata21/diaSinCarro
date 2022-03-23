@@ -20,17 +20,16 @@
     />
     <link rel="stylesheet" href="../css/stylesTable.css">
 
-    <title>Tabla Solicitudes</title>
+    <title>Tabla Consultas</title>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-ligth p-3 justify-content-between">
         <img src="../images/logo_encabezado.png" width="300" height="70" alt="">
-        <button class="btn btn-primary" onclick="location.href = '../../index.html'" type="submit">Ir al formulario</button>
     </nav>
     
     <div class="container container-xxl my-2 shadow-sm p-3 mb-5 bg-white rounded">
       <div class="col-sm-12 col-md-12 col-lg-12">
-        <h3 class="text-center my-5">Tabla de Solicitudes</h3>
+        <h3 class="text-center my-5">Tabla de Consultas</h3>
         <div class="table-responsive table-hover" id="tableRequests">
           <table class="table">  
               <thead class="text-muted">
@@ -43,7 +42,6 @@
                  <th class="text-center">Motivo de la solicitud</th>
                  <th class="text-center">Estado de la solicitud</th>
                  <th class="text-center">Fecha de la solicitud</th>
-                 <th class="text-center">Opciones</th>
               </thead>
               <tbody>
                 <?php while($row = $safe->fetch_assoc()) { ?>
@@ -57,10 +55,6 @@
                   <td><?php echo $row['motivoSolicitud']; ?></td>
                   <td><?php echo $row['estadoSolicitud']; ?></td>
                   <td><?php echo $row['fechaReg']; ?></td>
-                  <td class="text-center">
-                      <a href="edit.php?id_solicitud=<?php echo $row['id_solicitud'];?>">Editar</a> |
-                      <a href="delete.php?id_solicitud=<?php echo $row['id_solicitud'];?>">Borrar</a>
-                  </td>
                 </tr>
                 <?php } ?>
               </tbody>

@@ -3,11 +3,8 @@ var answer = document.getElementById("answer");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log("me diste un click");
-
   let datos = new FormData(form);
-
-  fetch("server/register.php", {
+  fetch("server/php/register.php", {
     method: "POST",
     body: datos,
   })
@@ -16,13 +13,12 @@ form.addEventListener("submit", (e) => {
       if (data === "error") {
         answer.innerHTML = `
           <div class="alert alert-danger" role="alert">
-                Llena todos los campos
+                Hacen falta campos por diligencias, completelos para continuar.
             </div>
           `;
       } else {
-        
         answer.innerHTML = `
-        <div class="alert alert-primary" role="alert">
+        <div class="alert alert-success" role="alert">
               ${data}
           </div>
         `;

@@ -12,16 +12,22 @@
     <title>Solicitud de movilidad</title>
   </head>
   <body>
-      <nav class="navbar navbar-dark bg-dark p-3 justify-content-center">
-        <button class="btn btn-primary" onclick="location.href = 'src/views/tableRequest.php'" type="submit">Ir a la tabla de solicitudes</button>
+      <nav class="navbar navbar-dark bg-ligth p-3">
+        <img src="src/images/logo_encabezado.png" width="300" height="70" alt="">
+        <div>
+          <button class="btn btn-primary" onclick="location.href = 'src/views/tableRequest.php'" type="submit">Solicitudes pendientes</button>
+          <button class="btn btn-primary" onclick="location.href = 'src/views/Consultar.php'" type="submit">Consultar procesadas</button>
+        </div>
       </nav>
       
-    <div class="container my-5">
+    <div class="container container-xxl my-2 shadow-lg p-3 mb-5 bg-white rounded">
         <h1>¡Ingresa la información solicitada!</h1>
         <div class="paragraph">
           <p>Antes de enviar el formulario, asegurese de ingresar la información correcta, una vez enviado el formulario no hay manera de modificarlo, ¡lea y responda con cuidado!</p>
         </div>
         <form id="form">
+            <input type="email" name="email" placeholder="Ingresar email" class="form-control my-3">
+            <input type="text" name="numberPhone" placeholder="Ingresar número de contacto" class="form-control my-3">
             <input type="text" name="cedulaNumber" placeholder="Ingresar número de cédula" class="form-control my-3">
             <input type="text" name="name" placeholder="Ingresar nombre completo" class="form-control my-3">
             <input type="text" name="licensePlate" placeholder="Ingresar placa del vehiculo" class="form-control my-3">
