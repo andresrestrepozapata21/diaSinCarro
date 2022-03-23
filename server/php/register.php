@@ -13,7 +13,7 @@ $fechaReg = date("d/m/y");
 
 $consult =  "INSERT INTO Solicitudes(email, numberPhone, cedulaNumber, nombreCompleto, placa, tipoVehiculo, motivoSolicitud, estadoSolicitud, fechaReg) VALUES ('$email','$numberPhone','$cedulaNumber','$name','$licensePlate','$vehicule','$justification','$estadoSoliciud','$fechaReg')";
 
-if($email ==='' || $numberPhone ==='' || $cedulaNumber === '' || $name === '' || $licensePlate === '' || $vehicule === 'Selecciona'|| $justification ===''){
+if($email ==='' || $numberPhone ==='' || $cedulaNumber === '' || $name === '' || $licensePlate === '' || $vehicule === 'selecciona'|| $justification ===''){
     echo json_encode('error');
 }else{
     $result = mysqli_query($conex, $consult);
