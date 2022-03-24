@@ -1,7 +1,7 @@
 <?php
 include('../../server/conection_db/db_conection.php');
 
-$filter = "";
+$filter = "WHERE cedulaNumber = '999999'";
 
 if(isset($_POST['buscar'])){
   if($_POST['cedula'] != ''){

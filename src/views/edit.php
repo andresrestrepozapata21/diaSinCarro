@@ -47,24 +47,6 @@ if(isset($_POST['edit'])){
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img src="../images/logo_encabezado.png" width="300" height="70" alt="logo">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="../../index.html">Formulario</a>
-          <a class="nav-item nav-link" href="tableRequest.php">Solicitudes</a>
-          <a class="nav-item nav-link" href="Consultar.php">Consultar</a>
-        </div>
-      </div>
     </nav>
     <div class="container container-xxl my-2 shadow-sm p-3 mb-5 bg-white rounded">
       <div class="col-sm-12 col-md-12 col-lg-12">
