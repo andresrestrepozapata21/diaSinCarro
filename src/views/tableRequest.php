@@ -22,13 +22,13 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Avancemos Sevilla</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img src="../images/logo_encabezado.png" width="300" height="70" alt="logo">
     </nav>
-    <div class="container container-xxl my-2 shadow-sm p-3 mb-5 bg-white rounded">
+    <div class="px-5">
         <h3 class="text-center my-5">Tabla de Solicitudes</h3>
         <div class="table-responsive table-hover" id="tableRequests">
           <table class="table">  

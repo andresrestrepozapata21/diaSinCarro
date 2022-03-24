@@ -23,7 +23,7 @@ $safe = $conex->query($consult);
   <!-- Bootstrap CSS and css module -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-  <title>Tabla Consultas</title>
+  <title>Avancemos Sevilla</title>
 </head>
 
 <body>
@@ -31,8 +31,8 @@ $safe = $conex->query($consult);
     <img src="../images/logo_encabezado.png" width="300" height="70" alt="">
   </nav>
 
-  <div class="container container-xxl my-2 shadow-sm p-3 mb-5 bg-white rounded">
-      <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  <div class="">
+      <form class ="px-5"method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         <h3 class="text-left my-5">Ingrese la cédula que desea consultar</h3>
         <input type="text" class="form-control" id="cedula" name="cedula" value="" placeholder="Ingrese su número de cédula">
         <div class=" text-left my-2">
@@ -41,7 +41,7 @@ $safe = $conex->query($consult);
         <h6 class="text-left my-5">si desea ver la tabla completa, después de realizada alguna búsqueda, oprima el botón "Buscar" sin ingresar ningún valor en el campo de texto correspondiente al número de cédula</h6>
       </form>
       <h3 class="text-center my-5">Tabla de Consultas</h3>
-      <div class="table-responsive table-hover" id="tableRequests">
+      <div class="table-responsive table-hover px-5" id="tableRequests">
         <table class="table">
           <thead class="text-muted">
             <th class="text-center">Email</th>

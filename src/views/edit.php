@@ -42,7 +42,7 @@ if(isset($_POST['edit'])){
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Avancemos Sevilla</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
